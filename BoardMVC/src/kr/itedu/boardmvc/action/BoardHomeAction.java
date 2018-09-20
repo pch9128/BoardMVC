@@ -7,7 +7,7 @@ import kr.itedu.boardmvc.ActionForward;
 import kr.itedu.boardmvc.common.Var;
 
 public class BoardHomeAction implements Action {
-	
+	//ddd
 	@Override
 	public ActionForward excute(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		ActionForward forward = new ActionForward();
