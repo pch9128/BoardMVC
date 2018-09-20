@@ -2,8 +2,8 @@ package kr.itedu.boardmvc;
 
 public class ActionForward {
 	private String path;
-	private boolean isredirect;
-	
+	private boolean isRedirect;
+		
 	public String getPath() {
 		return path;
 	}
@@ -11,12 +11,11 @@ public class ActionForward {
 		this.path = path;
 	}
 	public boolean isRedirect() {
-		return isredirect;
+		return isRedirect;
 	}
-	public void setRedirect(boolean redirect) {
-		this.isredirect = redirect;
+	public void setRedirect(boolean isRedirect) {
+		this.isRedirect = isRedirect;
 	}
 	
-
-
+	
 }
