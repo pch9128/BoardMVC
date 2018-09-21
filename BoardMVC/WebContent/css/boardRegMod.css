@@ -1,12 +1,8 @@
 @charset "UTF-8";
-.subContainer {
-	padding: 20px;
-	display: flex;
-	height: 100%;
-	align-items: center;	
-	flex-direction: column;
+form{
+	text-align : center;
+	margin-top : 50px;
 }
-
-table {
-	width: 100%;
+input{
+	margin-bottom : 50px;
 }

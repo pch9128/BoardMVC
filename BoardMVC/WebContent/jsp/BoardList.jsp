@@ -5,10 +5,11 @@
 <%
 	ArrayList<BoardVO> result = (ArrayList<BoardVO>)
 	request.getAttribute("data");
-	//result.clear();
+//result.clear();	
 %>
-
 <% if(result != null && result.size() > 0) { %>
+<link rel="stylesheet" type="text/css" href="../css/common.css?ver=4">
+<jsp:include page="top.jsp"/>
 <div class="tableContainer">
 	<table>
 		<thead>
@@ -37,7 +38,9 @@
 		<a href="boardRegMod?btype=${param.btype}&bid=0"><button>글쓰기</button></a>
 	</div>	
 </div>
+<jsp:include page="bottom.jsp"/>
 <% } else { %>
 	게시글이 없습니다.
 <% } %>
+
 

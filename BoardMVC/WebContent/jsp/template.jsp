@@ -1,21 +1,34 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" errorPage="error.jsp" %>   
+    pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>게시판</title>
-<link rel="stylesheet" type="text/css" href="css/common.css">
-<link rel="stylesheet" type="text/css" href="css/${content}.css">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/boardList.css?ver=3">
+<link rel="stylesheet" type="text/css" href="css/common.css?ver=5">
 </head>
 <body>
-	
+	<jsp:include page="top.jsp"/>
 	<div class="container">
-		<jsp:include page="top.jsp"/>	
-		<div class="content">
-			<jsp:include page='${content}.jsp' />
-		</div>	
-		<jsp:include page="bottom.jsp"/>		
+	<table>
+			<tr>
+				<th class="num">번호</th>
+				<th class="tit">제목</th>
+				<th class="time">등록일시</th>
+			</tr>
+			<c:forEach items="${data}" var="data">
+				<tr>
+					<td>${data.bid}</td>
+					<td>${dta.btitle}</td>
+					<td>${data.bregdate}</td>
+				</tr>
+			</c:forEach>	
+		</table>
+		<div class="button">
+			<button>글쓰기</button>
+		</div>
 	</div>	
+	<jsp:include page="bottom.jsp"/>
 </body>
-</html>
