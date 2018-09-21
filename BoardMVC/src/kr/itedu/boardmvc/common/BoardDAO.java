@@ -128,6 +128,7 @@ public int maxpage() {
 	}
 	return max;
 	
+	
 }	
 public String pageCon(int page) {
 	Connection conn=null;

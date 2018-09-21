@@ -27,6 +27,7 @@
 			</c:forEach>	
 		</table>
 		<div class="button">
+		
 			<button>글쓰기</button>
 		</div>
 	</div>	

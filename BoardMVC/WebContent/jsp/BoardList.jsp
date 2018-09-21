@@ -34,7 +34,7 @@
 		</tbody>
 	</table>
 	
-	<div class="bottom">
+	<div class="bottom">		
 		<a href="boardRegMod?btype=${param.btype}&bid=0"><button>글쓰기</button></a>
 	</div>	
 </div>
